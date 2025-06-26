@@ -1,0 +1,7 @@
+train: data/yolo/train/images
+val:   data/yolo/val/images
+test:  data/yolo/test/images
+
+nc: 1
+names: ['test_tube']
+
