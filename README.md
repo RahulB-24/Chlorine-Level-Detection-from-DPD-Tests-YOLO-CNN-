@@ -1,4 +1,4 @@
-# Chlorine Detection AI System
+# Chlorine Level Detection from DPD Tests (YOLO + CNN)
 
 A full-stack AI-powered web application that detects chlorine levels (0–5) from images using a hybrid deep learning approach. This project automates chlorine level detection in water using the DPD (N,N-diethyl-p-phenylenediamine) test method. A YOLO model detects the DPD color region from a test image, which is then classified using a CNN into chlorine levels (0–5 ppm). The web interface allows users to upload an image and get instant predictions with visual feedback.
 
