@@ -124,11 +124,6 @@ chlorine-detection/
 - **Frontend** can be hosted on Vercel or Netlify  
 - Make sure to replace the API endpoint in React with your deployed backend URL
 
----
-
-## 🖼️ Screenshots
-
-*(Add screenshots showing image upload, detection, and prediction display)*
 
 ---
 
