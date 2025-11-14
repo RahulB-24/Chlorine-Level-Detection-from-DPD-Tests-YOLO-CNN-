@@ -10,8 +10,8 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-YOLO_MODEL_PATH = r'C:\Users\etern\Desktop\test tube\models\test_tube_detector\weights\best.pt'
-CNN_MODEL_PATH = r'C:\Users\etern\Desktop\test tube\models\cnn_chlorine_best3.pth'
+YOLO_MODEL_PATH = r'C:\Personal\Coding\Projects\Chlorine project\models\yolo_weights.pt'
+CNN_MODEL_PATH = r'C:\Personal\Coding\Projects\Chlorine project\models\cnn_final.pth'
 OUTPUT_DIR = 'src/outputs'
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 

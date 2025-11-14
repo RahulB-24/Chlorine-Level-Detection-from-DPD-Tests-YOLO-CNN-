@@ -8,7 +8,7 @@ import sys
 
 # Paths
 YOLO_MODEL_PATH = 'models/test_tube_detector/weights/best.pt'
-CNN_MODEL_PATH = 'models/cnn_chlorine_best3.pth'
+CNN_MODEL_PATH = 'models/cnn_final.pth'
 OUTPUT_DIR = 'outputs'
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
