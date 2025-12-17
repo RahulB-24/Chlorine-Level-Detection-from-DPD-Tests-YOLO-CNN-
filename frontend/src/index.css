@@ -1,0 +1,108 @@
+*{
+  box-sizing:border-box;
+}
+
+html,body{
+  margin:0;
+  height:100%;
+  overflow:hidden;
+  font-family:"Segoe UI",sans-serif;
+  background:#020617;
+  color:#e5e7eb;
+}
+
+/* SMOOTH WATER BACKGROUND */
+.water-bg{
+  position:fixed;
+  inset:0;
+  background:
+    linear-gradient(
+      120deg,
+      rgba(34,211,238,0.08),
+      rgba(56,189,248,0.12),
+      rgba(34,211,238,0.08)
+    );
+  background-size:300% 300%;
+  animation:waterMove 18s ease infinite;
+  z-index:-1;
+}
+
+@keyframes waterMove{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+/* MAIN CONTAINER */
+.container{
+  height:100vh;
+  max-width:720px;
+  margin:auto;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+/* TITLE */
+h1{
+  margin-bottom:10px;
+  font-size:36px;
+  background:linear-gradient(90deg,#38bdf8,#22d3ee);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* UPLOAD CARD */
+.upload{
+  width:100%;
+  padding:22px;
+  margin-top:16px;
+  border-radius:16px;
+  background:rgba(2,6,23,0.85);
+  border:1px solid rgba(56,189,248,0.35);
+}
+
+/* IMAGE PREVIEW */
+.preview{
+  margin-top:16px;
+  max-width:260px;
+  max-height:180px;
+  width:auto;
+  height:auto;
+  object-fit:contain;
+  border-radius:12px;
+  box-shadow:0 0 20px rgba(56,189,248,0.25);
+}
+
+/* SLIDER */
+.slider-container{
+  width:100%;
+  margin-top:18px;
+}
+
+input[type=range]{
+  width:100%;
+  appearance:none;
+  height:6px;
+  border-radius:10px;
+  background:linear-gradient(90deg,#22d3ee,#38bdf8);
+}
+
+input[type=range]::-webkit-slider-thumb{
+  appearance:none;
+  width:18px;
+  height:18px;
+  border-radius:50%;
+  background:white;
+  box-shadow:0 0 12px rgba(34,211,238,0.8);
+}
+
+/* VALUE */
+.value{
+  margin-top:8px;
+  font-size:32px;
+  color:#22d3ee;
+}
